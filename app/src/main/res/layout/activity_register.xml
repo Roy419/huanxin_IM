@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+ >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_centerInParent="true"
+                android:layout_marginTop="100dp"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                android:layout_alignBottom="@id/iv_logo"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="用户名"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="5dp"
+
+                android:singleLine="true"
+                android:background="@null"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:layout_marginLeft="5dp"
+
+                />
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="密码"
+
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:background="@null"
+
+
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+             android:gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+        <Button
+android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录页面"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="login"
+            />
+
+        <Button
+            android:id="@+id/bt_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登出设备"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+        android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码?"
+            android:textSize="12sp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
