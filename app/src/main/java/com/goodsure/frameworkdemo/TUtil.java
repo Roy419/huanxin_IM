@@ -2,6 +2,10 @@ package com.goodsure.frameworkdemo;
 
 import java.lang.reflect.ParameterizedType;
 
+
+
+
+
 /**
  * 类转换初始化
  */
